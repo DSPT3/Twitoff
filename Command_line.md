@@ -24,8 +24,6 @@
                                     include_rts=False, mode='extended')
 ->>> tweets[0].text
 
-
-
 ## Basilica embedding tweet_text
 
 ->>> tweet_text = tweet[0].text
