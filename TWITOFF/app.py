@@ -1,6 +1,6 @@
 """ Code for our app """
 
-from flask import Flask
+from flask import Flask, render_template
 from flask_migrate import Migrate
 from .models import DB
 # Make the app factory
@@ -12,7 +12,7 @@ def create_app():
     # Add config for the database
 
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
-
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     # Let the database know about the app
 
     DB.init_app(app)
@@ -22,5 +22,5 @@ def create_app():
 
     @app.route('/')
     def root():
-        return "Welcome to Twitoff!!!"
+        return render_template('base.html')
     return app
