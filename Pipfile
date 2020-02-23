@@ -17,6 +17,5 @@ tweepy = "*"
 redis = "*"
 psycopg2 = "*"
 gunicorn = "*"
-
 [requires]
 python_version = "3.7"
