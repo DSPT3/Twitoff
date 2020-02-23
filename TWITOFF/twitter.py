@@ -1,4 +1,4 @@
-"""Retrieve tweets, embedding, save into database"""
+"""Retrieve tweets, embedding, save into database for comparison"""
 
 import basilica
 import tweepy
