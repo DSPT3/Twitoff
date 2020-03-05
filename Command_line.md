@@ -55,15 +55,27 @@ Aleks's notes
 ## in my terminal in main guthub repo for Day 4
 
 pipenv shell
+
 heroku login
+
 heroku git:remote -a USERNAME-Twitoff
+
 git remote --verbose
+
 which gunicorn
+
 gunicorn TWITOFF:APP
+
 echo "web: gunicorn TWITOFF:APP -t 120" > Procfile
+
 git add .
+
 git commit -am "Deploying and adding Procfile
+
 git push origin master
+
 git push heroku master
+
 heroku addons:create heroku-postgresql:hobby-dev
+
 USERNAME-twitoof.herokuapp.com/reset #reset the database, create tables!
